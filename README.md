@@ -1,1 +1,0 @@
-# ducky-windows-hive-dump
